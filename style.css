@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    background-color: #e9f5ff; /* Latar belakang cerah */
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengisi layar penuh */
+    margin: 0;
+}
+
+form {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    text-align: left; /* Rata kiri untuk semua teks */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2980b9; /* Warna biru cerah */
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+    font-weight: 600; /* Menebalkan teks */
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 2px solid #3498db; /* Warna border */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2980b9; /* Mengubah warna border saat fokus */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="button"] {
+    padding: 12px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+    width: 100%; /* Memastikan tombol mengisi lebar form */
+}
+
+input[type="button"]:hover {
+    background-color: #3498db; /* Mengubah warna saat hover */
+}
+
+textarea {
+    resize: none; /* Menghindari resize textarea */
+}
