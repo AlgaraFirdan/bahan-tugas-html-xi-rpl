@@ -3,46 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form HTML</title>
+  <title>Buat Akun Baru</title>
+  
+  <!-- Bootstrap 5 CSS Inline CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .card {
+      border-radius: 15px;
+    }
+    .card-header {
+      background-color: #6610f2;
+      color: white;
+    }
+    .form-label {
+      font-weight: bold;
+    }
+    .btn-primary {
+      background-color: #6610f2;
+      border: none;
+      padding: 10px;
+    }
+    .btn-primary:hover {
+      background-color: #4b0d99;
+    }
+  </style>
 </head>
 <body>
-  <form action="">
-      <h1>Buat akun baru</h1> 
-      <h3>Mohon mengisi data anda</h3>
-      <p>first name : </p>
-      <label for="First name"></label>
-      <input type="text " id="first name">
-      <p>Last name : </p>
-      <label for="Last name"></label>
-      <input type="text " id="Last name">
-      <p>Gender</p>
-      <input type="radio" id="Laki-Laki" name="Gender">
-      <label for="Laki-Laki">Laki-Laki</label><br>
-      <input type="radio" id="Perempuan" name="Gender">
-      <label for="Perempuan">Perempuan</label>
-      <p>Nationality</p>
-      <select name="Nationality" id="Nationality">
-          <option value="Indonesia">Indonesia</option>
-          <option value="inggris">inggris</option>
-      </select>
-      <p>Language Spoken</p>
-
-      <input type="checkbox" id="Bahasa Indonesia" name="Bahasa">
-       <label for="Bahasa Indonesia">Bahasa Indonesia</label><br>
-       <input type="checkbox" id="english" name="Bahasa">
-       <label for="Bahasa english">english</label><br>
-       <input type="checkbox" id="other" name="Bahasa">
-       <label for="other">other</label>
-         <p>Bio</p>
-         <textarea name="Bio"clos="13" 
-         rows="10"></textarea><br>
-         <p>
-             <a href="WELKOM.html">
-
-                 <input type="button" name="sign 
-                 up" id="sign Up" value="sign up">
-              </a>
-          </p>
-    </form>
+  
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-sm-10">
+        <div class="card shadow-sm">
+          <div class="card-header text-center">
+            <h1>Buat Akun Baru</h1>
+            <p class="mb-0">Mohon mengisi data Anda</p>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Masukkan nama depan Anda">
+              </div>
+              
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Masukkan nama belakang Anda">
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="lakiLaki" value="Laki-Laki">
+                  <label class="form-check-label" for="lakiLaki">Laki-Laki</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="perempuan" value="Perempuan">
+                  <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="nationality" class="form-label">Nationality</label>
+                <select class="form-select" id="nationality">
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Inggris">Inggris</option>
+                </select>
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label">Language Spoken</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="bahasaIndonesia" value="Bahasa Indonesia">
+                  <label class="form-check-label" for="bahasaIndonesia">Bahasa Indonesia</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="english" value="English">
+                  <label class="form-check-label" for="english">English</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="otherLanguage" value="Other">
+                  <label class="form-check-label" for="otherLanguage">Other</label>
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="bio" class="form-label">Bio</label>
+                <textarea class="form-control" id="bio" rows="4" placeholder="Ceritakan sedikit tentang diri Anda"></textarea>
+              </div>
+              
+              <div class="d-grid">
+                <a href="welcome.html" class="btn btn-primary">Sign Up</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bootstrap 5 JS Inline CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
